@@ -1,0 +1,23 @@
+{
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "target": "Cropland"
+  },
+  "n_train": 800,
+  "n_test": 200,
+  "n_features": 188,
+  "tabpfn": {
+    "backend": "api",
+    "accuracy": 0.895,
+    "f1": 0.832,
+    "auc": 0.9400168289457869
+  },
+  "baseline": {
+    "backend": "catboost",
+    "accuracy": 0.89,
+    "f1": 0.8166666666666667,
+    "auc": 0.9236687101815121
+  }
+}
