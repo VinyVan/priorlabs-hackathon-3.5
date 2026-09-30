@@ -5,3 +5,7 @@ __pycache__/
 .env*
 data/raw/*
 !data/raw/.gitkeep
+web/node_modules/
+web/.next/
+web/*.tsbuildinfo
+api/__pycache__/

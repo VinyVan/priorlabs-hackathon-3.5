@@ -1,0 +1,53 @@
+{
+  "nav": { "home": "Accueil", "predict": "Prédire", "compare": "Comparer", "about": "Méthode" },
+  "hero": {
+    "badge": "Hackathon PriorLabs 3.5 — TabPFN-3.5",
+    "title": "Sahel Agri Predictor",
+    "subtitle": "Prédiction cropland à partir de signaux satellite + climat, avec TabPFN-3.5 au cœur d'un agent qui prédit, explique et recommande.",
+    "ctaPredict": "Tester une parcelle",
+    "ctaCompare": "Voir le match TabPFN vs baseline",
+    "liveTitle": "Verdict live sur un exemple",
+    "liveLoading": "Chargement de l'exemple et prédiction TabPFN…",
+    "liveError": "API injoignable — lancez FastAPI sur le port 8000.",
+    "cultivated": "Cultivée",
+    "notCultivated": "Non cultivée",
+    "cropProba": "Probabilité culture"
+  },
+  "predict": {
+    "title": "Prédire une parcelle",
+    "subtitle": "Uploadez un CSV ou utilisez l'exemple, choisissez le modèle, obtenez jauge + signaux + recommandation.",
+    "model": "Modèle",
+    "tabpfn": "TabPFN-3.5",
+    "baseline": "Baseline",
+    "useSample": "Utiliser l'exemple",
+    "upload": "Upload CSV",
+    "run": "Prédire",
+    "running": "Prédiction…",
+    "reco": "Recommandation",
+    "signals": "Top signaux",
+    "proba": "Probabilité culture",
+    "hint": "Le CSV doit contenir les colonnes d'entraînement (colonnes manquantes = 0, ordre auto-aligné).",
+    "error": "Prédiction impossible — vérifiez que l'API tourne."
+  },
+  "compare": {
+    "title": "TabPFN-3.5 vs Baseline",
+    "subtitle": "Chiffres servis par l'API depuis data/processed/metrics.json — jamais recalculés à la main.",
+    "metric": "Métrique",
+    "accuracy": "Accuracy",
+    "f1": "F1",
+    "auc": "AUC",
+    "loading": "Chargement des métriques…",
+    "error": "Métriques injoignables — lancez FastAPI sur le port 8000."
+  },
+  "about": {
+    "title": "Méthode & données",
+    "methodTitle": "Méthode",
+    "method": "Split stratifié 80/20 (seed 42). TabPFN-3.5 via tabpfn-client (clé TABPFN_API_KEY) avec fallback local, vs baseline CatBoost. L'agent prédit + explique (signaux globaux × z-score local) + recommande en langage simple FR/EN.",
+    "dataTitle": "Dataset",
+    "data": "1000 lignes × 189 colonnes tabulaires satellite + climat, cible binaire Cropland (0/1). Copie locale dans data/raw/, exemple dans data/processed/sample_example.csv.",
+    "linksTitle": "Liens",
+    "repo": "Dépôt du projet",
+    "hackathon": "Hackathon PriorLabs 3.5"
+  },
+  "common": { "fr": "FR", "en": "EN" }
+}
