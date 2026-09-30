@@ -1,0 +1,9 @@
+tabpfn-client
+tabpfn
+scikit-learn==1.6.1
+pandas==2.3.0
+pyarrow
+catboost==1.2.8
+lightgbm==4.6.0
+streamlit
+numpy==2.2.6
